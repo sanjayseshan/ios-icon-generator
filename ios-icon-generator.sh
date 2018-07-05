@@ -2,6 +2,8 @@
 #
 # Copyright (C) 2014 Wenva <lvyexuwenfa100@126.com>
 # 
+# Edited by Sanjay Seshan (2018)
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -137,4 +139,6 @@ convert "$SRC_FILE" -resize 50x50 "$DST_PATH/Icon-50.png"
 info 'Generate Icon-50@2x.png ...'
 convert "$SRC_FILE" -resize 100x100 "$DST_PATH/Icon-50@2x.png"
 
+info 'Generate Icon-1024@1x.png ...'
+convert "$SRC_FILE" -resize 1024x1024 "$DST_PATH/Icon-1024@1x.png"
 info 'Generate Done.'
